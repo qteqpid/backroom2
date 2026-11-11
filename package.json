@@ -1,0 +1,19 @@
+{
+  "name": "backroom-maze-3d",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run bundle && vite --host 127.0.0.1",
+    "bundle": "esbuild src/main.js --bundle --format=iife --outfile=src/game.bundle.js",
+    "build": "npm run bundle",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "three": "^0.166.1",
+    "vite": "^5.4.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.0"
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Maze Survival</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <div class="hud" aria-hidden="true">
+      <div class="panel">
+        <span class="label">怪物距离</span>
+        <strong id="distance">--m</strong>
+      </div>
+      <div class="panel">
+        <span class="label">状态</span>
+        <strong id="state">准备生存</strong>
+      </div>
+    </div>
+    <div id="startScreen" class="overlay">
+      <div class="start-copy">
+        <p class="kicker">3D Maze Survival</p>
+        <h1>活下去</h1>
+        <p>没有出口。寻找墙上的传送门，进入草原、水晶庭院、黄昏村落、雪白庭院和月光湖畔，在秘境里搜集物资箱。</p>
+        <p>V 键放出无人机，WASD 飞行，Space 上升，C/Ctrl 下降。</p>
+        <button id="startButton" type="button">开始生存</button>
+      </div>
+    </div>
+    <script src="./src/game.bundle.js"></script>
+  </body>
+</html>

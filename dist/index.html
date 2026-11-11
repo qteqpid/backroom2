@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Maze Escape</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-DVSfSLku.css">
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <div class="hud" aria-hidden="true">
+      <div class="panel">
+        <span class="label">出口距离</span>
+        <strong id="distance">--m</strong>
+      </div>
+      <div class="panel">
+        <span class="label">状态</span>
+        <strong id="state">寻找出口</strong>
+      </div>
+    </div>
+    <div id="startScreen" class="overlay">
+      <div class="start-copy">
+        <p class="kicker">3D Maze Escape</p>
+        <h1>找到迷宫出口</h1>
+        <p>点击开始后使用 WASD 移动，鼠标转向，空格跳跃。</p>
+        <button id="startButton" type="button">开始探索</button>
+      </div>
+    </div>
+    <script src="./src/game.bundle.js"></script>
+  </body>
+</html>
